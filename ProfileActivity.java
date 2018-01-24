@@ -169,7 +169,7 @@ public class ProfileActivity extends AppCompatActivity {
                 finish();
                 firebaseAuth.signOut();
             }
-
+//
             @Override
             public void onCancelled(DatabaseError databaseError) {
             }
