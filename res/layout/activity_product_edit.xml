@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="vanunu.deeznuts.ProductEditActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="vanunu.deeznuts.ProductEditActivity">
+
+        <EditText
+            android:id="@+id/editTextName56"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="10"
+            android:text="Retrieving Name..."
+            tools:layout_editor_absoluteX="170dp"
+            tools:layout_editor_absoluteY="109dp"
+            android:layout_above="@+id/editTextPrice56"
+            android:layout_alignLeft="@+id/editTextPrice56"
+            android:layout_alignStart="@+id/editTextPrice56" />
+
+        <EditText
+            android:id="@+id/editTextPrice56"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Retrieving Price..."
+            tools:layout_editor_absoluteX="170dp"
+            tools:layout_editor_absoluteY="173dp"
+            android:layout_above="@+id/editTextDescription56"
+            android:layout_alignLeft="@+id/editTextDescription56"
+            android:layout_alignStart="@+id/editTextDescription56" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_camera"
+            android:onClick="onClickAddImageFromCamera"
+            android:layout_alignTop="@+id/button4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="79dp"
+            android:background="@drawable/ic_gallery"
+            android:onClick="onClickAddImageFromGallery"
+            android:layout_below="@+id/editTextDescription56"
+            android:layout_alignRight="@+id/editTextDescription56"
+            android:layout_alignEnd="@+id/editTextDescription56"
+            android:layout_marginTop="10dp"
+            android:id="@+id/button4" />
+        <EditText
+            android:id="@+id/editTextDescription56"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="75"
+            android:text="Retrieving Description.."
+            tools:layout_editor_absoluteX="170dp"
+            tools:layout_editor_absoluteY="238dp"
+            android:layout_above="@+id/imageViewImage5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+        android:id="@+id/imageViewImage5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/missingproduct"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="293dp"
+        android:layout_marginBottom="16dp"
+            android:layout_above="@+id/button3"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:onClick="onClickProductSaveButton6"
+        android:background="@drawable/buttonbackground"
+        android:text="Save Changes"
+        android:textColor="?attr/colorAccent"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="501dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextPrice56"
+            android:layout_alignBottom="@+id/editTextPrice56"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:text="Price:"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/editTextName56"
+            android:layout_alignBottom="@+id/editTextName56"
+            android:layout_alignRight="@+id/textView11"
+            android:layout_alignEnd="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/editTextDescription56"
+            android:layout_alignBottom="@+id/editTextDescription56"
+            android:layout_alignRight="@+id/textView24"
+            android:layout_alignEnd="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            android:fontFamily="cursive"
+            android:text="Edit Your Product"
+            android:textColor="?attr/colorAccent"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>
+

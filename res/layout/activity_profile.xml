@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="vanunu.deeznuts.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="577dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="38dp"
+            android:text="Retrieving email..."
+            android:textAlignment="center"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="93dp"
+            tools:layout_editor_absoluteY="55dp"
+            android:layout_below="@+id/button7"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onClickLogOut"
+            android:background="@drawable/logout"
+            tools:layout_editor_absoluteX="267dp"
+            tools:layout_editor_absoluteY="7dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginTop="17dp" />
+
+        <EditText
+            android:id="@+id/editTextName5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:text="Retrieving name..."
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="141dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/SaveB"
+            android:layout_alignStart="@+id/SaveB" />
+
+        <Button
+            android:id="@+id/SaveB"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="78dp"
+            android:background="@drawable/buttonbackground"
+            android:onClick="onClickSave"
+            android:text="Save"
+            android:textColor="?attr/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:text="Balance:"
+            android:textAlignment="center"
+            android:textColor="@color/common_plus_signin_btn_text_dark_default"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewProfileBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@color/common_plus_signin_btn_text_dark_default"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/button2"
+            android:background="@drawable/buttonbackground"
+            android:onClick="AddFundsB"
+            android:text="Add Funds"
+            android:textColor="?attr/colorAccent" />
+
+        <EditText
+            android:id="@+id/editTextCreditcard1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextName5"
+            android:maxLength="16"
+            android:layout_alignStart="@+id/editTextName5"
+            android:layout_below="@+id/editTextName5"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Retrieving Credit Card..."
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextCreditcard1"
+            android:layout_alignStart="@+id/editTextCreditcard1"
+            android:layout_below="@+id/editTextCreditcard1"
+            android:layout_marginTop="9dp"
+            android:ems="10"
+            android:maxLength="50"
+            android:inputType="textPersonName"
+            android:text="Retrieving Address..."
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextCreditcard1"
+            android:layout_alignBottom="@+id/editTextCreditcard1"
+            android:layout_alignLeft="@+id/textView20"
+            android:layout_alignStart="@+id/textView20"
+            android:text="Credit Card:"
+            android:textColor="@color/common_plus_signin_btn_text_dark_default"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextName5"
+            android:layout_alignBottom="@+id/editTextName5"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_alignRight="@+id/textView4"
+            android:text="Name:"
+            android:textColor="@color/common_plus_signin_btn_text_dark_default"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextAddress"
+            android:layout_alignBottom="@+id/editTextAddress"
+            android:layout_alignLeft="@+id/button7"
+            android:layout_alignStart="@+id/button7"
+            android:text="Address:"
+            android:textColor="@color/common_plus_signin_btn_text_dark_default"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_below="@+id/button7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp" />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="vanunu.deeznuts.MainActivity">
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?android:attr/windowBackground"
+            app:itemIconTint="#FFFF00"
+            app:itemTextColor="#FFFF00"
+            app:menu="@menu/navigation" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DeezNutsTheme1" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary_material_dark_1</item>
+        <item name="android:textColorPrimary">@android:color/background_light</item>
+        <item name="android:navigationBarColor">?android:attr/textColorLink</item>
+
+    </style>
+    <!-- Transparent dialog -->
+    <style name="TransparentProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

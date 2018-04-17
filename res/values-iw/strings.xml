@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">דיז נאטס</string>
+    <string name="title_dashboard">דאשבורד</string>
+    <string name="title_home">כניסה</string>
+    <string name="title_notifications">התרעות</string>
+    <string name="Shop">חנות</string>
+    <string name="myAccount">החשבון שלי</string>
+    <string name="Catalog">קטלוג</string>
+    <string name="Meat">בשר</string>
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="vanunu.deeznuts.AddProductActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="582dp"
+        android:layout_weight="0.95">
+
+        <Button
+            android:id="@+id/AddProductB"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/textViewLink"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonbackground"
+            android:onClick="onClickAddProduct"
+            android:text="Add Product"
+            android:textColor="?attr/colorAccent"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="385dp" />
+
+
+        <TextView
+            android:id="@+id/textViewLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="37dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextProductDescription"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/editTextProductDescription"
+            android:layout_centerVertical="true" />
+
+        <EditText
+            android:id="@+id/editTextProductName"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/common_plus_signin_btn_text_dark_default"
+            android:layout_above="@+id/textView5"
+            android:layout_alignLeft="@+id/editTextProductDescription"
+            android:layout_alignStart="@+id/editTextProductDescription"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/editTextProductPrice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_above="@+id/textView6"
+            android:layout_alignLeft="@+id/editTextProductDescription"
+            android:layout_alignStart="@+id/editTextProductDescription"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="9dp" />
+
+        <EditText
+            android:id="@+id/editTextProductDescription"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="75"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/textView22"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="18dp"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      Price:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/editTextProductPrice"
+            android:layout_alignBottom="@+id/editTextProductPrice"
+            android:layout_alignLeft="@+id/textView10"
+            android:layout_alignStart="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     Name:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/editTextProductName"
+            android:layout_alignBottom="@+id/editTextProductName"
+            android:layout_alignLeft="@+id/textView22"
+            android:layout_alignStart="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/editTextProductDescription"
+            android:layout_alignBottom="@+id/editTextProductDescription"
+            android:layout_alignRight="@+id/textView22"
+            android:layout_alignEnd="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Category:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/spinner"
+            android:layout_alignLeft="@+id/textViewLink"
+            android:layout_alignStart="@+id/textViewLink"
+            android:layout_marginBottom="6dp" />
+
+
+        <Button
+            android:id="@+id/addImageCameraB"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_camera"
+            android:onClick="onClickAddImageCamera"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/textView23"
+            android:layout_toLeftOf="@+id/AddProductB"
+            android:layout_toStartOf="@+id/AddProductB" />
+
+        <Button
+            android:id="@+id/AddImageB"
+            android:layout_width="80dp"
+            android:layout_height="79dp"
+            android:background="@drawable/ic_gallery"
+            android:onClick="onClickAddImageGallery"
+            android:layout_alignBottom="@+id/addImageCameraB"
+            android:layout_alignRight="@+id/editTextProductName"
+            android:layout_alignEnd="@+id/editTextProductName"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Image:"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/AddProductB"
+            android:layout_alignLeft="@+id/AddProductB"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/AddProductB"
+            android:layout_alignStart="@+id/AddProductB"
+            app:srcCompat="@drawable/logo"
+            android:layout_above="@+id/editTextProductName" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="vanunu.deeznuts.MainActivity">
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?android:attr/windowBackground"
+            app:itemIconTint="#FFFF00"
+            app:itemTextColor="#FFFF00"
+            app:menu="@menu/navigation" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
